@@ -11,24 +11,29 @@
 * Unlock Bootloader
 * Reboot to bootloader
 * Flash the vendor boot image:
+
 ```
 fastboot flash vendor_boot vendor_boot.img
 ```
 * Flash the DTBO image:
+
 ```
 fastboot flash dtbo dtbo.img
 ```
 Flash the boot image:
+
 ```
 fastboot flash boot boot.img
 ```
 * Reboot to recovery:
+
 ```
 fastboot reboot recovery
 ```
-* In recovery mode, navigate to `Factory reset -> Format data/factory reset` and confirm to format the device.
-* After formatting, return to the main menu and navigate to `Apply update -> Apply from ADB`.
+* In recovery mode, navigate to **Factory reset -> Format data/factory reset** and confirm to format the device.
+* After formatting, return to the main menu and navigate to **Apply update -> Apply from ADB**.
 * Sideload the ROM:
+
 ```
 adb sideload crdroid.zip (replace "crdroid" with actual filename)
 ```
@@ -40,6 +45,7 @@ adb sideload crdroid.zip (replace "crdroid" with actual filename)
 * Boot to recovery
 * Choose apply update and Apply from ADB
 * Now install crDroid zip via sideload and reboot
+
 ```
 adb sideload crDroid.zip
 ```
